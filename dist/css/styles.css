@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style: none;
+}
+body {
+  color: #2f2f2f;
+}
+.welcome-block {
+  position: absolute;
+  background: #b3cde8;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.welcome-block__menu {
+  width: 300px;
+  height: 100vh;
+  background-color: #f0f3f7;
+  position: absolute;
+}

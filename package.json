@@ -1,0 +1,25 @@
+{
+  "name": "furqan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-less": "^3.3.0",
+    "gulp-watch": "^4.3.11",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Archakov06/furqan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Archakov06/furqan/issues"
+  },
+  "homepage": "https://github.com/Archakov06/furqan#readme"
+}
