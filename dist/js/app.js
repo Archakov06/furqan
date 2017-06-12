@@ -1,7 +1,14 @@
+var player;
+
 $(document).ready(function() {
 
   audiojs.events.ready(function() {
-    var as = audiojs.createAll();
+    player = audiojs.create($('audio')[0]);
   });
 
 });
+
+
+function play() {
+	player.play();
+}
