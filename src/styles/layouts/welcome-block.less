@@ -1,10 +1,20 @@
-body {
-  background-color: #b3cde8;
+* {
+  font-family: Helvetica Neue;
+  margin: 0px;
+  padding: 0px;
 }
+
+
 
 .welcome-block {
   position: relative;
   height: 100vh;
+  background-image: url("../img/backgroundimage.png") transparent;
+  background-color: #b3cde8;
+  
+  
+ 
+ 
 
   
 
@@ -22,17 +32,23 @@ body {
       margin-top: 40px;
       border: 1px solid white;
       border-radius: 6px;
-      width:410px;
-      height: 45px;
+      width: 100%;
+      padding: 14px;
       display: block;
-      opacity: 0.1px;
       color: white;
       font-size: 19px;
-
-
-
-
+      transition: 0.5s;
     }
+
+    button:hover {
+      color: #b3cde8;
+      background-color: white;
+      transition: 0.5s;
+      cursor: pointer;
+      
+    }
+
+    
 
   }
 
