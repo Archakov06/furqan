@@ -15,14 +15,25 @@
 
 	<div class="welcome-block">
 
-		<audio id="audio" src="https://verses.quran.com/Alafasy/mp3/001006.mp3" preload="auto"></audio>
+<!-- 		<audio id="audio" src="https://verses.quran.com/Alafasy/mp3/001006.mp3" preload="auto"></audio>
 
-		<button onclick="play()">Play</button>
+	<button onclick="play()">Play</button> -->
+	<audio id="player" src="https://verses.quran.com/Alafasy/mp3/001006.mp3"></audio>
 
-	</div>
+	<div>
+		<img onclick="down()" src="./img/icon-ios7-skipbackward-128.png">
+		<img id="play" src="img/icon-play-128.png" onclick="playPause()">
+		<img class="hide" id="pause" src="img/icon-pause-128.png" onclick="playPause()">
+		<img onclick="next()" src="./img/icon-ios7-skipbackward-127.png">
+		<img onclick="mute()" src="./img/icon-volume-medium-128.png">
+		<img class="hide" src="./img/ic_volume_mute_48px-128.png">
+	</div> 
 
-	<script src="./dist/js/libs/jquery.min.js"></script>
-	<script src="./dist/js/libs/audio.min.js"></script>
-	<script src="./dist/js/app.js"></script>
+</div>
+
+<script src="./dist/js/libs/jquery.min.js"></script>
+<script src="./dist/js/libs/audio.min.js"></script>
+<script src="./dist/js/app.js"></script>
 </body>
 </html>
+

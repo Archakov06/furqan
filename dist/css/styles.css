@@ -7,6 +7,9 @@
 body {
   color: #2f2f2f;
 }
+.hide {
+  display: none;
+}
 body {
   background-color: #b3cde8;
 }
@@ -34,4 +37,8 @@ body {
 }
 div {
   color: red;
+}
+
+.hide {
+  display: none;
 }
