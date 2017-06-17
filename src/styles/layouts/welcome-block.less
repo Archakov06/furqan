@@ -1,11 +1,3 @@
-* {
-  font-family: 'Helvetica';
-  margin: 0px;
-  padding: 0px;
-}
-
-
-
 .welcome-block {
   position: relative;
   height: 100vh;
@@ -19,8 +11,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-
 
     button {
       background: transparent;
@@ -49,16 +39,18 @@
   &__hamburger {
       margin:20px;
       cursor: pointer;
-      height: 14px;
-      width: 35px;
+      height: 20px;
+      width: 23px;
       transition: all 0.5s;
       display: inline-block;
+      position: relative;
 
       .line {
         background-color: white;
         height: 2px;
         width: 23px;
         transform: translateY(6px);
+        transition: all 0.5s;
       }
 
       .line:after {
@@ -83,22 +75,24 @@
         transform-origin: 50% 100%;
       }
 
-      &.active .line:after,
-       .hamburger.active .line:before {
-           transform: translateY(0);
+      &--active .line:after,
+       &--active .line:before {
+          transform: translateY(0);
+          background-color: black;
       }
        
 
-      &.active .line:after {
+      &--active .line:after {
            transform: rotate(45deg);
       }
 
-      &.active .line:before {
+      &--active .line:before {
            transform: rotate(-45deg);
       }
 
-      &.active .line {
+      &--active .line {
            height: 0;
+           background-color: black;
       }
 
 
@@ -111,6 +105,41 @@
     cursor: pointer;
 
   }
+
+  &__menu {
+    width: 260px;
+    height: 100%;
+    background-color: #f0f2f8;
+    position: absolute;
+    left: -300px;
+    transition: all 0.5s;
+
+    li {
+      padding: 120px 50px;
+
+      a {
+        margin-bottom: 16px; 
+        display: block;
+        text-decoration: none;
+        color: @blackColor;
+        letter-spacing: 0.7px;
+        font-weight: 600;
+
+      }
+      
+    }
+
+    &--show {
+      left: 0;
+      box-shadow: 2px -1px 20px 0px rgba(0, 0, 0, 0.5);
+      background: #f0f2f8; 
+    }
+
+  }
+
+  
+
+
 
 
 }

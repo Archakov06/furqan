@@ -1,16 +1,12 @@
 * {
-  margin: 2;
-  padding: 0;
+  font-family: 'Helvetica';
+  margin: 0px;
+  padding: 0px;
   outline: none;
   list-style: none;
 }
 body {
   color: #2f2f2f;
-}
-* {
-  font-family: 'Helvetica';
-  margin: 0px;
-  padding: 0px;
 }
 .welcome-block {
   position: relative;
@@ -46,16 +42,18 @@ body {
 .welcome-block__hamburger {
   margin: 20px;
   cursor: pointer;
-  height: 14px;
-  width: 35px;
+  height: 20px;
+  width: 23px;
   transition: all 0.5s;
   display: inline-block;
+  position: relative;
 }
 .welcome-block__hamburger .line {
   background-color: white;
   height: 2px;
   width: 23px;
   transform: translateY(6px);
+  transition: all 0.5s;
 }
 .welcome-block__hamburger .line:after {
   display: block;
@@ -77,24 +75,50 @@ body {
   transition: all 0.5s;
   transform-origin: 50% 100%;
 }
-.welcome-block__hamburger.active .line:after,
-.welcome-block__hamburger .hamburger.active .line:before {
+.welcome-block__hamburger--active .line:after,
+.welcome-block__hamburger--active .line:before {
   transform: translateY(0);
+  background-color: black;
 }
-.welcome-block__hamburger.active .line:after {
+.welcome-block__hamburger--active .line:after {
   transform: rotate(45deg);
 }
-.welcome-block__hamburger.active .line:before {
+.welcome-block__hamburger--active .line:before {
   transform: rotate(-45deg);
 }
-.welcome-block__hamburger.active .line {
+.welcome-block__hamburger--active .line {
   height: 0;
+  background-color: black;
 }
 .welcome-block__language {
   margin: 20px;
   float: right;
   color: white;
   cursor: pointer;
+}
+.welcome-block__menu {
+  width: 260px;
+  height: 100%;
+  background-color: #f0f2f8;
+  position: absolute;
+  left: -300px;
+  transition: all 0.5s;
+}
+.welcome-block__menu li {
+  padding: 120px 50px;
+}
+.welcome-block__menu li a {
+  margin-bottom: 16px;
+  display: block;
+  text-decoration: none;
+  color: #2f2f2f;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+}
+.welcome-block__menu--show {
+  left: 0;
+  box-shadow: 2px -1px 20px 0px rgba(0, 0, 0, 0.5);
+  background: #f0f2f8;
 }
 div {
   color: red;
