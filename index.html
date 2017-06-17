@@ -18,15 +18,18 @@
 <!-- 		<audio id="audio" src="https://verses.quran.com/Alafasy/mp3/001006.mp3" preload="auto"></audio>
 
 	<button onclick="play()">Play</button> -->
-	<audio id="player" src="https://verses.quran.com/Alafasy/mp3/001006.mp3"></audio>
+	<audio id="player" src=""></audio>
 
 	<div>
-		<img onclick="down()" src="./img/icon-ios7-skipbackward-128.png">
+		<img onclick="back()" src="./img/icon-ios7-skipbackward-128.png">
 		<img id="play" src="img/icon-play-128.png" onclick="playPause()">
 		<img class="hide" id="pause" src="img/icon-pause-128.png" onclick="playPause()">
 		<img onclick="next()" src="./img/icon-ios7-skipbackward-127.png">
 		<img onclick="mute()" src="./img/icon-volume-medium-128.png">
 		<img class="hide" src="./img/ic_volume_mute_48px-128.png">
+		<div class="container">
+		<input id="range" type="range" min="0" max="100" step="1" value="70"/>
+		</div>
 	</div> 
 
 </div>
