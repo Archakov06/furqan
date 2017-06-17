@@ -54,6 +54,16 @@ function down() {
 	}
 }
 
-function mute() {
-	audio.muted = false;
+function audioMute() {
+	if (audio.muted) { 
+		$('#Mute').removeClass('hide');
+		$('#Unmute').addClass('hide');
+		audio.muted = false;
+	}
+	
+	else {
+		$('#unMute').removeClass('hide');
+		$('#mute').addClass('hide');
+		audio.muted = true;
+	}
 }
