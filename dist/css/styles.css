@@ -13,10 +13,11 @@ body {
   height: 100vh;
   background-image: url("../img/backgroundimage.png") transparent;
   background-color: #b3cde8;
+  overflow: hidden;
 }
 .welcome-block__logo-big {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -91,35 +92,54 @@ body {
   background-color: black;
 }
 .welcome-block__language {
-  margin: 20px;
+  margin: 20px 30px;
   float: right;
   color: white;
   cursor: pointer;
+  transition: all 0.5s;
 }
-.welcome-block__menu {
-  width: 260px;
+.welcome-block__language span {
+  letter-spacing: 0.7px;
+}
+.welcome-block__language--active {
+  position: relative;
+  z-index: 1;
+  color: black;
+}
+.welcome-block__side-menu {
   height: 100%;
   background-color: #f0f2f8;
   position: absolute;
-  left: -300px;
   transition: all 0.5s;
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
 }
-.welcome-block__menu li {
-  padding: 120px 50px;
+.welcome-block__side-menu ul {
+  margin: 70px 40px;
 }
-.welcome-block__menu li a {
+.welcome-block__side-menu ul li {
   margin-bottom: 16px;
+}
+.welcome-block__side-menu ul li a {
   display: block;
   text-decoration: none;
   color: #2f2f2f;
   letter-spacing: 0.7px;
   font-weight: 600;
 }
-.welcome-block__menu--show {
-  left: 0;
-  box-shadow: 2px -1px 20px 0px rgba(0, 0, 0, 0.5);
+.welcome-block__side-menu--left {
+  left: -270px;
+  width: 250px;
+}
+.welcome-block__side-menu--left-show {
+  left: 0!important;
   background: #f0f2f8;
 }
-div {
-  color: red;
+.welcome-block__side-menu--right {
+  right: -220px;
+  width: 200px;
+}
+.welcome-block__side-menu--right-show {
+  right: 0!important;
+  background: #f0f2f8;
+  z-index: 1;
 }
