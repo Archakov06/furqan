@@ -24,8 +24,8 @@ body {
 .welcome-block__logo-big button {
   background: transparent;
   margin-top: 40px;
-  border: 1px solid white;
-  border-radius: 6px;
+  border: 2px solid white;
+  border-radius: 30px;
   width: 100%;
   padding: 15px;
   display: block;
