@@ -6,7 +6,7 @@
   background-image: url("../img/backgroundimage.png") transparent;
   background-color: #b3cde8;
   overflow: hidden;
-  
+  display: none;
 
   &__logo-big {
     
@@ -14,7 +14,6 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 
     button {
       background: transparent;
@@ -34,151 +33,13 @@
     button:hover {
       color: #b3cde8;
       background-color: white;
-      cursor: pointer;
-      
+      cursor: pointer; 
     }
 
   }
-
-  &__hamburger {
-      margin:20px;
-      cursor: pointer;
-      height: 20px;
-      width: 23px;
-      transition: all 0.5s;
-      display: inline-block;
-      position: relative;
-
-      .line {
-        background-color: white;
-        height: 2px;
-        width: 23px;
-        transform: translateY(6px);
-        transition: all 0.5s;
-      }
-
-      .line:after {
-        display: block;
-        content: '';
-        transform: translateY(-8px);
-        background-color: white;
-        height: 2px;
-        width: 23px;
-        transition: all 0.5s;
-        transform-origin: 60% 0;
-      }
-
-      .line:before {
-        display: block;
-        content: '';
-        transform: translateY(6px);
-        background-color: white;
-        height: 2px;
-        width: 23px;
-        transition: all 0.5s;
-        transform-origin: 50% 100%;
-      }
-
-      &--active .line:after,
-       &--active .line:before {
-          transform: translateY(0);
-          background-color: black;
-      }
-       
-
-      &--active .line:after {
-           transform: rotate(45deg);
-      }
-
-      &--active .line:before {
-           transform: rotate(-45deg);
-      }
-
-      &--active .line {
-           height: 0;
-           background-color: black;
-      }
-
-
-  }
-
-  &__language {
-    margin: 20px 30px;
-    float: right;
-    color: white;
-    cursor: pointer;
-    transition: all 0.5s;
-
-    span {
-      letter-spacing: 0.7px;
-      
-    }
-
-    &--active {
-      position: relative;
-      z-index: 0;
-      color: black;
-     
-    }
-
-  }
-
-  &__side-menu {
-    height: 100%;
-    background-color: #f0f2f8;
-    position: absolute;
-    transition: all 0.5s;
-    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
-
-    ul {
-      margin: 70px 40px;
-
-      li {
-          margin-bottom: 16px; 
-
-        a {
-          display: block;
-          text-decoration: none;
-          color: @blackColor;
-          letter-spacing: 0.7px;
-          font-weight: 600;
-
-        }
-        
-      }
-
-    }
-
-    &--left {
-      left: -270px;
-      width: 250px;
-
-      &-show {
-        left: 0!important;
-        background: #f0f2f8; 
-      }
-
-    }
-
-    &--right {
-      right: -220px;
-      width: 200px;
-
-      h3 {
-        cursor: pointer;
-        margin: 20px 25px;  
-      }
-
-      &-show {
-        right: 0!important;
-        background: #f0f2f8; 
-        z-index: 1;
-      }
-
-    }
-
-  }
-
 
 }
+
+
+
 
