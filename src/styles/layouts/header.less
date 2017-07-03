@@ -1,0 +1,84 @@
+.header {
+  width: 100%;
+  position: absolute;
+
+    &__hamburger {
+        margin:20px;
+        cursor: pointer;
+        height: 20px;
+        width: 23px;
+        transition: all 0.5s;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+
+        .line {
+          background-color: white;
+          height: 2px;
+          width: 23px;
+          transform: translateY(6px);
+          transition: all 0.5s;
+        }
+
+        .line:after {
+          display: block;
+          content: '';
+          transform: translateY(-8px);
+          background-color: white;
+          height: 2px;
+          width: 23px;
+          transition: all 0.5s;
+          transform-origin: 60% 0;
+        }
+
+        .line:before {
+          display: block;
+          content: '';
+          transform: translateY(6px);
+          background-color: white;
+          height: 2px;
+          width: 23px;
+          transition: all 0.5s;
+          transform-origin: 50% 100%;
+        }
+
+        &--active .line:after,
+         &--active .line:before {
+            transform: translateY(0);
+            background-color: black;
+        }
+         
+
+        &--active .line:after {
+             transform: rotate(45deg);
+        }
+
+        &--active .line:before {
+             transform: rotate(-45deg);
+        }
+
+        &--active .line {
+             height: 0;
+             background-color: black;
+        }
+
+
+    }
+
+    &__language {
+        margin: 20px 30px;
+        float: right;
+        color: white;
+        cursor: pointer;
+        transition: all 0.5s;
+        position: relative;
+        z-index: 2;
+
+        span {
+          letter-spacing: 0.7px;
+          
+        }
+
+      }
+
+}

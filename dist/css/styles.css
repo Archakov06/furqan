@@ -14,6 +14,7 @@ body {
   background-image: url("../img/backgroundimage.png") transparent;
   background-color: #b3cde8;
   overflow: hidden;
+  display: none;
 }
 .welcome-block__logo-big {
   position: absolute;
@@ -40,7 +41,53 @@ body {
   background-color: white;
   cursor: pointer;
 }
-.welcome-block__hamburger {
+.side-menu {
+  height: 100%;
+  background-color: #f0f2f8;
+  position: fixed;
+  transition: all 0.5s;
+  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.side-menu ul {
+  margin: 70px 40px;
+}
+.side-menu ul li {
+  margin-bottom: 16px;
+}
+.side-menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #2f2f2f;
+  letter-spacing: 0.7px;
+  font-weight: 600;
+}
+.side-menu--left {
+  left: -270px;
+  width: 250px;
+}
+.side-menu--left-show {
+  left: 0!important;
+  background: #f0f2f8;
+}
+.side-menu--right {
+  right: -220px;
+  width: 200px;
+  background: #f0f2f8;
+}
+.side-menu--right h3 {
+  cursor: pointer;
+  margin: 20px 25px;
+}
+.side-menu--right-show {
+  right: 0!important;
+  z-index: 3;
+}
+.header {
+  width: 100%;
+  position: absolute;
+}
+.header__hamburger {
   margin: 20px;
   cursor: pointer;
   height: 20px;
@@ -48,15 +95,16 @@ body {
   transition: all 0.5s;
   display: inline-block;
   position: relative;
+  z-index: 2;
 }
-.welcome-block__hamburger .line {
+.header__hamburger .line {
   background-color: white;
   height: 2px;
   width: 23px;
   transform: translateY(6px);
   transition: all 0.5s;
 }
-.welcome-block__hamburger .line:after {
+.header__hamburger .line:after {
   display: block;
   content: '';
   transform: translateY(-8px);
@@ -66,7 +114,7 @@ body {
   transition: all 0.5s;
   transform-origin: 60% 0;
 }
-.welcome-block__hamburger .line:before {
+.header__hamburger .line:before {
   display: block;
   content: '';
   transform: translateY(6px);
@@ -76,74 +124,61 @@ body {
   transition: all 0.5s;
   transform-origin: 50% 100%;
 }
-.welcome-block__hamburger--active .line:after,
-.welcome-block__hamburger--active .line:before {
+.header__hamburger--active .line:after,
+.header__hamburger--active .line:before {
   transform: translateY(0);
   background-color: black;
 }
-.welcome-block__hamburger--active .line:after {
+.header__hamburger--active .line:after {
   transform: rotate(45deg);
 }
-.welcome-block__hamburger--active .line:before {
+.header__hamburger--active .line:before {
   transform: rotate(-45deg);
 }
-.welcome-block__hamburger--active .line {
+.header__hamburger--active .line {
   height: 0;
   background-color: black;
 }
-.welcome-block__language {
+.header__language {
   margin: 20px 30px;
   float: right;
   color: white;
   cursor: pointer;
   transition: all 0.5s;
-}
-.welcome-block__language span {
-  letter-spacing: 0.7px;
-}
-.welcome-block__language--active {
   position: relative;
-  z-index: 0;
-  color: black;
+  z-index: 2;
 }
-.welcome-block__side-menu {
-  height: 100%;
-  background-color: #f0f2f8;
-  position: absolute;
-  transition: all 0.5s;
-  box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.3);
-}
-.welcome-block__side-menu ul {
-  margin: 70px 40px;
-}
-.welcome-block__side-menu ul li {
-  margin-bottom: 16px;
-}
-.welcome-block__side-menu ul li a {
-  display: block;
-  text-decoration: none;
-  color: #2f2f2f;
+.header__language span {
   letter-spacing: 0.7px;
-  font-weight: 600;
 }
-.welcome-block__side-menu--left {
-  left: -270px;
-  width: 250px;
+.surah-block {
+  width: 100%;
+  height: 100%;
+  background-color: #eaecef;
 }
-.welcome-block__side-menu--left-show {
-  left: 0!important;
-  background: #f0f2f8;
+.surah-block__header {
+  padding: 35px;
+  width: 100%;
+  background-color: #b3cde8;
 }
-.welcome-block__side-menu--right {
-  right: -220px;
-  width: 200px;
+.surah-block__search {
+  display: inline-block;
+  margin: 50px 0;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
 }
-.welcome-block__side-menu--right h3 {
-  cursor: pointer;
-  margin: 20px 25px;
+.surah-block__search input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: none;
 }
-.welcome-block__side-menu--right-show {
-  right: 0!important;
-  background: #f0f2f8;
-  z-index: 1;
+.surah-block__list {
+  margin-left: 70px;
+}
+.surah-block__list li {
+  padding: 10px;
 }
