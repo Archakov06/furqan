@@ -8,6 +8,9 @@
 body {
   color: #2f2f2f;
 }
+.container {
+  width: 1300px;
+}
 .welcome-block {
   position: relative;
   height: 100vh;
@@ -155,6 +158,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #eaecef;
+  cursor: pointer;
 }
 .surah-block__header {
   padding: 35px;
@@ -164,8 +168,8 @@ body {
 .surah-block__search {
   display: inline-block;
   margin: 50px 0;
-  width: 100%;
-  padding: 30px;
+  width: 97%;
+  padding: 13px;
   box-sizing: border-box;
 }
 .surah-block__search input {
@@ -174,11 +178,33 @@ body {
   font-size: 16px;
   box-sizing: border-box;
   border-radius: 6px;
-  box-shadow: none;
+  border: 2px solid #b3cde8;
 }
 .surah-block__list {
   margin-left: 70px;
 }
 .surah-block__list li {
   padding: 10px;
+}
+.surah-block__number {
+  display: inline-block;
+  margin-right: 10px;
+  color: #bdc9d3;
+  font-weight: bold;
+}
+.surah-block__name {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #3c71a8;
+}
+.surah-block__name-translate {
+  display: inline-block;
+  color: #bdc9d3;
+  font-weight: bold;
+}
+.surah-block__translate {
+  display: inline-block;
+  color: #bdc9d3;
+  font-weight: bold;
 }
