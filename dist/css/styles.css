@@ -158,7 +158,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: #eaecef;
-  cursor: pointer;
 }
 .surah-block__header {
   padding: 35px;
@@ -171,6 +170,11 @@ body {
   width: 100%;
   padding: 13px;
   box-sizing: border-box;
+}
+.surah-block__search img {
+  position: relative;
+  margin: -38px 31px;
+  float: right;
 }
 .surah-block__search input {
   width: 100%;
@@ -185,6 +189,7 @@ body {
 }
 .surah-block__list li {
   padding: 10px;
+  cursor: pointer;
 }
 .surah-block__number {
   display: inline-block;
@@ -210,16 +215,23 @@ body {
 }
 .surah-block__footer {
   width: 100%;
-  height: 60px;
+  height: 78px;
   background-color: #161b23;
+  margin-top: 40px;
 }
 .surah-block__footer span {
-  margin: 30px;
+  margin: 30px 100px;
   color: #59667a;
   display: inline-block;
+  cursor: pointer;
+}
+.surah-block__footer ul {
+  float: right;
+  margin: 30px;
 }
 .surah-block__footer li {
   display: inline-block;
-  float: right;
+  padding-right: 20px;
   color: #59667a;
+  cursor: pointer;
 }

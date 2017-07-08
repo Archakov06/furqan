@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     background-color: #eaecef;
-    cursor:pointer;
+   
 
         
 
@@ -21,7 +21,13 @@
             box-sizing: border-box;
 
 
-            
+            img {
+               
+                position: relative;
+                margin: -38px 31px;
+                float: right;
+            }
+
             input {
                
                 width: 100%;
@@ -39,8 +45,10 @@
         &__list {
           padding: 13px;
 
+
             li {
                 padding: 10px;
+                cursor: pointer;
             }
         }
 
@@ -75,22 +83,29 @@
 
         &__footer {
             width: 100%;
-            height: 60px;
+            height: 78px;
             background-color: #161b23;
-            ;
+            margin-top: 40px;
 
             span {
-                margin: 30px;
+                margin: 30px 100px;
                 color: #59667a;
                 display: inline-block;
+                cursor: pointer;
                 
 
             }
 
-            li {
-                display: inline-block;
+            ul {
                 float: right;
-                color:#59667a;
+                margin: 30px;
+
             }
+                li {
+                    display: inline-block;
+                    padding-right: 20px;
+                    color:#59667a;
+                    cursor: pointer;
+                }
         }
 }
