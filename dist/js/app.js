@@ -32,5 +32,9 @@ $(document).ready(function(){
         
    });
 
+    $('.welcome-block__logo-big button').click(function(){
+        
+    });
+
    
 });
