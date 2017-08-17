@@ -159,6 +159,7 @@ body {
   width: 100%;
   height: 100%;
   background-color: #eaecef;
+  display: none;
 }
 .surah-block__header {
   padding: 35px;
@@ -204,33 +205,63 @@ body {
   margin-right: 10px;
   color: #3c71a8;
 }
-.surah-block__name-translate {
-  display: inline-block;
-  color: #bdc9d3;
-  font-weight: bold;
-}
 .surah-block__translate {
   display: inline-block;
   color: #bdc9d3;
   font-weight: bold;
 }
-.surah-block__footer {
+__footer {
   width: 100%;
   padding: 27px;
   background-color: #161b23;
   margin-top: 40px;
 }
-.surah-block__footer span {
+__footer span {
   color: #59667a;
   display: inline-block;
   cursor: pointer;
 }
-.surah-block__footer ul {
+__footer ul {
   float: right;
 }
-.surah-block__footer li {
+__footer li {
   display: inline-block;
   padding-right: 20px;
   color: #59667a;
   cursor: pointer;
+}
+.player-block {
+  background-image: url(../img/Gora.png);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+.player-block__reproduce {
+  width: 100%;
+  height: 186px;
+  background-color: white;
+  position: absolute;
+  top: 476px;
+  opacity: 0.9;
+}
+.player-block__text {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.player-block__down-list {
+  position: absolute;
+  padding: 22px 72px;
+}
+.player-block__down-list select {
+  background: transparent;
+  border: 0px;
+  color: white;
+  font-size: 15px;
 }
